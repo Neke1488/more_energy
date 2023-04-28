@@ -1,5 +1,8 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
+import axios from 'axios';
+import { DOMEN_SITE } from '../../../config/app.config';
+import { HOST } from '../../../config/app.config';
 
 
   
@@ -30,6 +33,23 @@ const LoginPage = () => {
       }
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post(DOMEN_SITE, { email, password })
+          .then(res => {
+            console.log(res);
+            if (res.data === true) {
+                window.location.href = DOMEN_SITE + "/auth"
+            } else {
+                alert("There is already a user with this email")
+            }
+        }).catch(() => {
+            alert("An error occurred on the server")
+        })
+      }
+
+
+
     const passwordHandler = (e) => {
       setPassword(e.target.value)
       if (e.target.value.length < 3 || e.target.value.length > 15){
@@ -58,7 +78,7 @@ const LoginPage = () => {
     return (
         <div className="loginForm">
             <div className="wrapper">
-                <form>
+                <form onSubmit={e => handleSubmit(e)}>
                     <h1>Login Page</h1>
                     {(emptyEmail && emailError) && <div style={{color:"red"}}>{emailError}</div>}
                     <input onChange={e => emailHandler(e)} value={email} onBlur={e => blurHandler(e)} name="email" type="text" placeholder="Your email" />

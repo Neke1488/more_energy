@@ -38,7 +38,7 @@ const RegistrationPage = () => {
         } else if(!validator.isStrongPassword(register.password, {minSymbols: 0})) {
             alert("Password must consist of one lowercase, uppercase letter and number, at least 8 characters")
         } else {
-            axios.post(HOST + "/auth/registration/", {
+            axios.post(HOST + "/auth/register/", {
                 username: register.username,
                 email: register.email,
                 password: register.password,
