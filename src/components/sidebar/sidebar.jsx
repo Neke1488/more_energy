@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import '../../App.css';
+import '../../fonts/Roboto-Bold.ttf';
 
 const Sidebar = ({children}) => {
   const menuItem = [
@@ -82,7 +83,7 @@ const Sidebar = ({children}) => {
       <div className="sidebar">
         <div className="top_section">
             <div className="pic">
-              <h1><svg width="56" height="58" viewBox="0 0 56 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <h1>{<svg width="56" height="58" viewBox="0 0 56 58" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_13997_4042)">
 <path d="M12.336 32.1395L8.5189 24.2326L5.12073 58L10.3809 33.6744L14.198 41.5814L17.5962 7.81396L12.336 32.1395Z" fill="#F6FAFF"/>
 <path d="M5.95844 38.7441H3.16542L3.67747 33.9999H6.37739L6.70324 31.2092H3.95677L4.42228 26.8836H7.21529L7.4946 24.0464H1.81546L0 41.4417H5.67914L5.95844 38.7441Z" fill="#F6FAFF"/>
@@ -101,7 +102,7 @@ const Sidebar = ({children}) => {
 <rect width="56" height="58" fill="white"/>
 </clipPath>
 </defs>
-</svg>
+</svg>}
 </h1>
             </div>
         </div>

@@ -4,11 +4,30 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../src/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url('../src/fonts/Anton-Regular.ttf');
+}
+
 .container {
   display:flex;
   justify-content: center; 
-  
+  font-family: 'Roboto';
+  font-weight: 500;
 }
+
+h1{
+  font-family: 'Anton';
+  font-weight: 400;
+  color: #616972;
+  font-size: 25px;
+}
+
 
 .icon {
   display:flex;
@@ -23,7 +42,7 @@
 
 main {
   width: 100%;
-  padding: 20px;
+  padding: 40px;
 }
 
 .sidebar {
