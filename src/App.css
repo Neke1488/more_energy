@@ -6,8 +6,20 @@
 
 .container {
   display:flex;
-
+  justify-content: center; 
+  align-items: center; 
 }
+
+.icon {
+  display:flex;
+  justify-content: center;
+}
+
+.link_text {
+  display:flex;
+  justify-content: center;
+}
+
 
 main {
   width: 100%;
@@ -17,13 +29,14 @@ main {
 .sidebar {
   background-color: #416186;
   color: #BEDCFF;
-  align-items: center;
   width: 72px;
   height: 1243px;
 }
 
 .top_section {
   display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .link {
