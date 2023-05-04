@@ -60,4 +60,25 @@ main {
 
 .link {
   color: #BEDCFF;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  background: #2F4A69;
+  transition: 0.3s ease;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+.link:hover{
+  background:#2F4A69;
+  transition: all 0.5s;
+}
+
+.active{
+  background:#2F4A69;
+  
 }
