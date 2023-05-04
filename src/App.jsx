@@ -14,18 +14,18 @@ import Feel_best from './pages/feel_best';
 import Eating_level from './pages/eating_level';
 import Stickers from './pages/stickers';
 import Sample_menus from './pages/sample_menus';
+import Header from './components/header';
 
 
 
 function App() {
     return (
         <div className="App">
-          
           <Routes>
               <Route path="login" element={<AuthRootComponent />}></Route>
               <Route path="registration" element={<AuthRootComponent />}></Route>
-           
           </Routes>
+          <Header></Header>
           <Sidebar>
           <Routes>
               <Route path="clients" element={<Clients />}></Route>
@@ -39,7 +39,6 @@ function App() {
               <Route path="stickers" element={<Stickers />}></Route>
           </Routes>
           </Sidebar>
-          
         </div>
   );
 }

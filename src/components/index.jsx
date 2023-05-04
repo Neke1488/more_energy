@@ -4,7 +4,7 @@ import LoginPage from './auth/login';
 import RegistrationPage from './auth/registration';
 
 const AuthRootComponent = () => {
-    const location = useLocation()
+    const location = useLocation();
     return (
     location.pathname === '/login' ? <LoginPage /> : location.pathname === '/registration' ? <RegistrationPage /> : null
     );
