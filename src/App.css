@@ -64,7 +64,6 @@ main {
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  background: #2F4A69;
   transition: 0.3s ease;
   align-items: center;
   flex-direction: column;

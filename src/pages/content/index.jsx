@@ -1,5 +1,4 @@
 import React from "react";
-
 import Sidebar from '../../components/sidebar/sidebar';
 import Coaches from '../coaches';
 import Clients from '../clients';
