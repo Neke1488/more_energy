@@ -160,6 +160,8 @@ order: 0;
 flex-grow: 0;
 }
 .searchButton {
+  display: flex;
+  align-items: center;
   height: 26px;
   width: 26px;
   position: absolute;
@@ -169,9 +171,27 @@ flex-grow: 0;
   cursor: pointer;
 }
 .searchButton:before {
+  display: flex;
+  justify-content: center;
   content: url(/src/icons/search.svg);
   font-family: FontAwesome;
   font-size: 16px;
   color: #F9F0DA;
 }
 
+.sorted{
+  display: flex;
+  align-items: center;
+  gap:20px;
+  padding-left: 35px;
+}
+
+.by-date{
+  display: flex;
+  gap: 10.5px;
+}
+
+.by-name{
+  display: flex;
+  gap: 10.5px;
+}
