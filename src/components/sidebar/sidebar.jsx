@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import '../../App.css';
 import '../../fonts/Roboto-Bold.ttf';
@@ -20,54 +20,54 @@ const Sidebar = ({children}) => {
     {
     path:"clients",
     name:"Clients",
-    icon: <img src={clients} className="clients" />,
+    icon: <img src={clients} className="clients" alt="cli" />,
   },
   {
     path: "coaches",
     name: "Coaches",
-    icon: <img src={coach} className="coach" />,
+    icon: <img src={coach} className="coach" alt="coaches" />,
   },
   {
     path: "exercises",
     name: "Exercises",
-    icon: <img src={exercises} className="exercises" />,
+    icon: <img src={exercises} className="exercises" alt="exercises" />,
   },
   {
     path: "recipes",
     name: "Recipes",
-    icon: <img src={recipes} className="recipes" />,
+    icon: <img src={recipes} className="recipes" alt="rec" />,
   },
   {
     path: "articles",
     name: "Articles",
-    icon: <img src={articles} className="articles" />,
+    icon: <img src={articles} className="articles" alt="art" />,
   },
   {
     path: "sample_menus",
     name: "Sample menus",
-    icon: <img src={menus} className="menus" />,
+    icon: <img src={menus} className="menus" alt="menu" />,
   },
   {
     path: "feel_best",
     name: "Feel best",
-    icon: <img src={feelBest} className="feelbest" />,
+    icon: <img src={feelBest} className="feelbest" alt="best" />,
   },
   {
     path: "eating_level",
     name: "Eating level",
-    icon: <img src={eating_level} className="eating_level" />,
+    icon: <img src={eating_level} className="eating_level" alt="level" />,
   },
   {
     path: "stickers",
     name: "Stickers",
-    icon: <img src={stickers} className="stickers" />,
+    icon: <img src={stickers} className="stickers" alt="stick"/>,
   },];
   return (
     <div className="container">
       <div className="sidebar">
         <div className="top_section">
             <div className="pic">
-            <img src={logo} className="logo" />
+            <img src={logo} className="logo" alt="logo" />
             </div>
         </div>
         {
