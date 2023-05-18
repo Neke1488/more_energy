@@ -195,3 +195,47 @@ flex-grow: 0;
   display: flex;
   gap: 10.5px;
 }
+
+.cancel{
+  box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 20px;
+gap: 12px;
+width: 90px;
+height: 42px;
+border: 1px solid #616972;
+border-radius: 24px;
+flex: none;
+order: 0;
+flex-grow: 0;
+color: #616972;
+background-color: white;
+}
+
+.save{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 20px;
+gap: 12px;
+width: 76px;
+height: 42px;
+background: #DDAF45;
+border-radius: 24px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.buttons_add{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wrapper{
+  display: flex;
+  gap:24px;
+}

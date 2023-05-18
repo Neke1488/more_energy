@@ -11,6 +11,7 @@ import Stickers from '../stickers';
 import Sample_menus from '../sample_menus';
 import Header from '../../components/header';
 import { Route, Routes } from "react-router-dom";
+import AddArticles from "../add_articles";
 
 const Content = () =>{
     return(
@@ -27,6 +28,7 @@ const Content = () =>{
               <Route path="feel_best" element={<Feel_best />}></Route>
               <Route path="eating_level" element={<Eating_level />}></Route>
               <Route path="stickers" element={<Stickers />}></Route>
+              <Route path="addArticles" element={<AddArticles />}></Route>
         </Routes>
           </Sidebar>
         </div>
