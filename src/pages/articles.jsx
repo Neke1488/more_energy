@@ -6,7 +6,7 @@ const Articles = () => {
         <div className="nameWrapper">
             <div className="name">
                 <h1>Articles</h1>
-                <button className="addArticles">+ Add Articles</button>
+                <a  href='http://localhost:3000/content/addArticles' className="addArticles">+ Add Articles</a>
             </div>
             <div className="search">
             <form>
